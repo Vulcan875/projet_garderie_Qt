@@ -18,15 +18,10 @@ public:
 
 private slots:
     void on_ajouter_clicked();
-
     void on_eliminer_clicked();
-
     void on_modifier_clicked();
-
     void on_pushButton_2_clicked();
-
     void on_pushButton_2_pressed();
-
     void on_rechercher_clicked();
 
 private:

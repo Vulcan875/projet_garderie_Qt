@@ -17,8 +17,6 @@ etudiant1 :: etudiant1 ( QString identifiant,QString nom,QString prenom,QString 
 bool etudiant1 ::ajouter()
 {
   QSqlQuery query;
-  //convertion chaine character entier
-
   query.prepare("insert into etudiant (identifiant,nom,prenom,classe)values(:identifiant,:nom,:prenom,:classe)");
   //creation des variable liéés
   query.bindValue(":identifiant",identifiant);
@@ -88,8 +86,8 @@ QSqlQueryModel * etudiant1 :: trierd()
 
 QSqlQueryModel * etudiant1 :: rechercher(QString classe)
 {
-    //QSqlQuery query;
-    //query.prepare("select * from etudiant where classe=:classe");
+    QSqlQuery query;
+   // query.prepare("select * from etudiant where classe=:classe");
     //query.bindValue(":classe",classe);
     //query.exec();
     QSqlQueryModel * model=new QSqlQueryModel();

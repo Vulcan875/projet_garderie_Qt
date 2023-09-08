@@ -70,6 +70,6 @@ void etudiant::on_pushButton_2_pressed()
 
 void etudiant::on_rechercher_clicked()
 {
-    QString departement=ui->lineEdit_classe3->text();
-    ui->tableView->setModel(e.rechercher(departement));
+    QString classe=ui->lineEdit_classe3->text();
+    ui->tableView->setModel(e.rechercher(classe));
 }

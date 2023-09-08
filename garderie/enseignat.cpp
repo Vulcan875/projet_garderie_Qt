@@ -16,10 +16,6 @@ enseignat::~enseignat()
     delete ui;
 }
 
-void enseignat::on_pushButton_3_clicked()
-{
-
-}
 
 void enseignat::on_trier_clicked()
 {
@@ -29,13 +25,6 @@ void enseignat::on_trier_pressed()
 {
     ui->tableView->setModel(e.trierd());
 }
-
-
-void enseignat::on_pushButton_clicked()
-{
-
-}
-
 
 void enseignat::on_ajouter_clicked()
 {
